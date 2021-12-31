@@ -8,8 +8,6 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: payfire
-      MYSQL_PASSWORD: payfire
-      MYSQL_DATABASE: payfirews
     volumes:
+      - ./ias/provision/mysql/init:/docker-entrypoint-initdb.d
       - /var/payfire/mysql:/var/lib/mysql
