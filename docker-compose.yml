@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    image: mysql:5.6
+    ports: 
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./ias/provision/mysql/init:/docker-entrypoint-initdb.d
+      - /var/payfire/mysql:/var/lib/mysql
