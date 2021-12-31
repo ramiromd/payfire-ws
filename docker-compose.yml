@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    image: mysql:5.6
+    ports: 
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: payfire
+      MYSQL_PASSWORD: payfire
+      MYSQL_DATABASE: payfirews
+    volumes:
+      - /var/payfire/mysql:/var/lib/mysql
