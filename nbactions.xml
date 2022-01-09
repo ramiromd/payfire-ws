@@ -156,4 +156,19 @@
                 <Env.APP_DEBUG>1</Env.APP_DEBUG>
             </properties>
         </action>
+        <action>
+            <actionName>build</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.MYSQL_DSN>jdbc:mysql://localhost:3306</Env.MYSQL_DSN>
+                <Env.MYSQL_USR>payfire</Env.MYSQL_USR>
+                <Env.MYSQL_PSWD>payfire</Env.MYSQL_PSWD>
+                <Env.APP_DEBUG>1</Env.APP_DEBUG>
+            </properties>
+        </action>
     </actions>

@@ -11,10 +11,10 @@ import com.ramiromd.payfire.utils.StringUtils;
 public class StringUtilsTest {
 	
 	
-	@Test
-	public void it_can_sluggify_a_string() {
-		
-		assertEquals("hello-world", StringUtils.toSlug("Hello World !!"));
-		assertEquals("nandu", StringUtils.toSlug("Ñandú"));
-	}
+    @Test
+    public void it_can_sluggify_a_string() {
+
+        assertEquals("hello-world", StringUtils.toSlug("Hello World !!"));
+        assertEquals("nandu", StringUtils.toSlug("Ñandú"));
+    }
 }

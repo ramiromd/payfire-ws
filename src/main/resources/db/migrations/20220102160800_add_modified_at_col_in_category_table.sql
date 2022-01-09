@@ -1,0 +1,2 @@
+ALTER TABLE categories 
+ADD COLUMN updated_at DATETIME DEFAULT NULL;
